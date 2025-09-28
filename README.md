@@ -29,3 +29,29 @@ To understand the social dynamics, I first visualize the network. I am using the
 The static plot reveals a non-uniform structure where certain monks (nodes) are more central and receive more connections (arrows pointing towards them) than others.
 ![Static Plot of Monks Network](https://github.com/jianhua00zhou/stat133-project1/blob/a55356e9b1edef2b3f6e3d3fe3ca7ad80c19e0c5/Rplot.png)
 
+**Interactive Network Plot**
+In this visualization, nodes can be moved, and hovering over them reveals their names and connections. The size of each node is proportional to its in-degree, making it easy to identify the most popular monks.
+![Interactive Plot of Monks Network](https://github.com/jianhua00zhou/stat133-project1/blob/a55356e9b1edef2b3f6e3d3fe3ca7ad80c19e0c5/WechatIMG62702.jpg)
+
+## Part 2:
+Quantitative analysis helps to confirm the patterns observed in the visualizations. We computed three key summary measures for each monk: out-degree, in-degree, and mean tie strength.
+The bar plot below visualizes the in-degree of each monk, clearly showing the disparity in popularity across the group.
+![Observed Network In-Degree](https://github.com/jianhua00zhou/stat133-project1/blob/a55356e9b1edef2b3f6e3d3fe3ca7ad80c19e0c5/Rplot01.jpeg)
+
+**Which monk is most liked?**
+The most liked monk is Bonaven_5, who has the highest in-degree.
+
+**Which monk is least liked?**
+The least liked monk is Greg_2, who has the lowest in-degree.
+
+## Part 3:
+The function generate_random_network() creates a network of the same size where each monk gives out a fixed number of "likes" to randomly chosen peers.
+![Random Network In-Degree](https://github.com/jianhua00zhou/stat133-project1/blob/a55356e9b1edef2b3f6e3d3fe3ca7ad80c19e0c5/Rplot02.jpeg)
+
+## Part 4:
+The structure of the real monks' network was compared against the randomly generated network. The most striking difference is in the in-degree distribution.
+The observed network has a highly skewed distribution, with clear hubs (highly popular monks) and isolates (unpopular monks).
+The random network's distribution is relatively uniform, with most monks having an in-degree value close to the average. There are no significant outliers.
+
+**Short Reflection from Part 4**
+By comparing the real Sampson's Monks network to a simple random model, the complexity of real-world social structures becomes evident. The observed network shows a highly uneven distribution of connections, creating a few highly popular "hubs" and several peripheral "isolates," whereas the random network's connections are distributed uniformly, lacking any such structural differentiation. This key difference demonstrates that social networks do not form by chance but are governed by underlying principles like "preferential attachment," where popularity is attractive. 
