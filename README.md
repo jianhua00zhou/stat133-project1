@@ -1,5 +1,7 @@
 # stat133
-## Part 4: 
+# Analysis of Sampson's Monks Social Network
+
+## Part 4 Answer: 
 **Observed Network**
 - **Uneven Distribution:** The in-degree distribution is highly skewed.
 - **Presence of Hubs:** Clear central figures exist, such as BONAVEN_5, who is significantly more popular than others.
@@ -20,3 +22,10 @@ The primary difference lies in the structure of the degree distribution. The obs
 The random model lacks key patterns of real social structures, most notably preferential attachment and community structure. It cannot replicate the "rich get richer" phenomenon where popular individuals attract more connections, nor can it form the tightly-knit clusters or "cliques" that emerge organically in human societies.
 
 ---
+## Part 1:
+To understand the social dynamics, I first visualize the network. I am using the SAMPLK3 sociomatrix, which represents the "liking" relationships among the monks of the study.
+
+**Static Network Plot**
+The static plot reveals a non-uniform structure where certain monks (nodes) are more central and receive more connections (arrows pointing towards them) than others.
+![Static Plot of Monks Network](https://github.com/jianhua00zhou/stat133-project1/blob/a55356e9b1edef2b3f6e3d3fe3ca7ad80c19e0c5/Rplot.png)
+
